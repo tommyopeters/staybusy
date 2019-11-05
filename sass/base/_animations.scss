@@ -1,0 +1,51 @@
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 3rem);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+.floating {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate-right {
+  from {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+.rotate-right {
+  animation-name: rotate-right;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotate-left {
+  from {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(-30deg);
+  }
+}
+.rotate-left {
+  animation-name: rotate-left;
+  animation-duration: 4s;
+  -moz-animation-delay: 200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}

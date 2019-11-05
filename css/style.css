@@ -1,0 +1,229 @@
+@keyframes floating {
+  from {
+    transform: translate(0, 0px); }
+  50% {
+    transform: translate(0, 3rem); }
+  to {
+    transform: translate(0, 0px); } }
+
+.floating {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+@keyframes rotate-right {
+  from {
+    transform: rotate(30deg); }
+  50% {
+    transform: rotate(20deg); }
+  to {
+    transform: rotate(30deg); } }
+
+.rotate-right {
+  animation-name: rotate-right;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+@keyframes rotate-left {
+  from {
+    transform: rotate(-30deg); }
+  50% {
+    transform: rotate(-20deg); }
+  to {
+    transform: rotate(-30deg); } }
+
+.rotate-left {
+  animation-name: rotate-left;
+  animation-duration: 4s;
+  -moz-animation-delay: 200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 5.5rem; }
+
+header {
+  max-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  background: linear-gradient(to right, #f2f9ff 33%, #eef7ff 33% 67%, #e9f5ff 67%); }
+  header nav {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; }
+    header nav ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center; }
+      header nav ul li {
+        margin-left: 8rem; }
+        header nav ul li a {
+          color: #1989eb;
+          font-weight: 800; }
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw; }
+  main section .container {
+    width: 75%; }
+
+main .introduction {
+  position: relative; }
+  main .introduction .top-introduction {
+    min-height: 65rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #000000dd, #000000dd), url("https://res.cloudinary.com/tommyopeters/image/upload/v1572874464/staybusy/mandala-seamless-pattern-design-printing-tribal-ornament_76587-1048_1_ekm16n.png"); }
+    main .introduction .top-introduction_text {
+      width: 75%; }
+      main .introduction .top-introduction_text p {
+        font-size: 2.4rem;
+        color: #828282;
+        font-weight: 700;
+        margin-top: 2rem; }
+  main .introduction .bottom-introduction {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center; }
+    main .introduction .bottom-introduction_image {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 25rem 0 15rem 0; }
+      main .introduction .bottom-introduction_image img {
+        margin-bottom: 4rem;
+        width: 100%; }
+  main .introduction-mobile {
+    position: absolute;
+    right: 10%;
+    top: 10rem; }
+
+main .fonts {
+  background-color: white;
+  min-height: 90rem; }
+  main .fonts .container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10rem;
+    padding-top: 5rem; }
+    main .fonts .container .fonts-content {
+      padding-top: 15rem; }
+      main .fonts .container .fonts-content .font {
+        margin-bottom: 5rem; }
+        main .fonts .container .fonts-content .font button {
+          padding: 1.8rem 4.5rem;
+          border-radius: 5rem;
+          border: none;
+          outline: none;
+          font-weight: 700;
+          justify-self: center;
+          width: 25rem;
+          cursor: pointer; }
+        main .fonts .container .fonts-content .font-regular {
+          margin-bottom: 1rem;
+          display: grid;
+          grid-template-columns: 3fr 2fr;
+          align-items: end; }
+          main .fonts .container .fonts-content .font-regular .averta h3 {
+            font-weight: 400;
+            margin-bottom: 1rem; }
+          main .fonts .container .fonts-content .font-regular button {
+            background-color: #afafaf; }
+        main .fonts .container .fonts-content .font-bold {
+          display: grid;
+          grid-template-columns: 3fr 2fr;
+          align-items: start; }
+          main .fonts .container .fonts-content .font-bold .averta h3 {
+            font-weight: 700;
+            margin-bottom: 1rem; }
+          main .fonts .container .fonts-content .font-bold button {
+            margin-top: 3rem;
+            background-color: #fce3c4; }
+      main .fonts .container .fonts-content .colors h3 {
+        margin-bottom: 2rem; }
+      main .fonts .container .fonts-content .colors .color-group {
+        display: flex; }
+        main .fonts .container .fonts-content .colors .color-group .color {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 7rem; }
+          main .fonts .container .fonts-content .colors .color-group .color .inner-color {
+            height: 12.5rem;
+            width: 12.5rem;
+            border-radius: 100%;
+            margin-bottom: 2rem; }
+        main .fonts .container .fonts-content .colors .color-group .brown div {
+          background-color: #fce3c4; }
+        main .fonts .container .fonts-content .colors .color-group .black div {
+          background-color: #0d0d0d; }
+        main .fonts .container .fonts-content .colors .color-group .grey div {
+          background-color: #afafaf; }
+    main .fonts .container .fonts-mobile {
+      position: relative; }
+      main .fonts .container .fonts-mobile img {
+        position: absolute; }
+      main .fonts .container .fonts-mobile .rotate-right {
+        transform-origin: 25rem 40rem; }
+      main .fonts .container .fonts-mobile .rotate-left {
+        transform: rotate(-30deg);
+        transform-origin: 25rem 40rem; }
+
+main .process {
+  background-image: linear-gradient(to right, #000000f5, #000000f5), url("https://res.cloudinary.com/tommyopeters/image/upload/v1572901963/staybusy/Mask_Group_1_ujtie4.png");
+  background-size: cover;
+  color: white; }
+  main .process .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; }
+    main .process .container .process-text ul {
+      list-style-type: none; }
+
+a.project-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: underline;
+  color: white; }
+  a.project-link span {
+    margin-left: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden; }
+    a.project-link span img {
+      width: 100%; }
