@@ -86,6 +86,40 @@ header {
           color: #1989eb;
           font-weight: 800; }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer .container {
+    width: 75%;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    footer .container h3 {
+      font-weight: 800;
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+      color: #105293; }
+    footer .container p {
+      font-size: 18px;
+      color: #555555; }
+    footer .container .visit-us p {
+      margin-bottom: 1rem; }
+    footer .container .direction {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-decoration-line: underline;
+      color: #105293; }
+    footer .container .social-links {
+      display: flex;
+      gap: 2rem; }
+      footer .container .social-links i {
+        color: #555555; }
+  footer p {
+    width: 75%;
+    font-size: 1.5rem;
+    color: #555555; }
+
 main section {
   display: flex;
   flex-direction: column;
@@ -208,10 +242,129 @@ main .process {
   color: white; }
   main .process .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center; }
-    main .process .container .process-text ul {
-      list-style-type: none; }
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    padding: 5rem 0; }
+    main .process .container .process-text {
+      height: 70%; }
+      main .process .container .process-text h3 {
+        margin-bottom: 3rem; }
+      main .process .container .process-text ul {
+        height: 90%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        main .process .container .process-text ul li {
+          margin-bottom: 4rem; }
+          main .process .container .process-text ul li h2 {
+            font-weight: bold;
+            font-size: 6rem;
+            color: #fce3c4; }
+          main .process .container .process-text ul li p {
+            font-weight: bold;
+            color: #afafaf;
+            font-size: 1.8rem; }
+    main .process .container .process-image {
+      width: 100%; }
+      main .process .container .process-image_container {
+        width: 100%;
+        overflow: hidden; }
+        main .process .container .process-image_container img {
+          width: 100%; }
+
+main .feedback {
+  background-image: url("https://res.cloudinary.com/tommyopeters/image/upload/v1572986658/staybusy/Mask_Group_uzbyq4.svg");
+  background-size: cover; }
+  main .feedback .container {
+    padding: 10rem 0; }
+    main .feedback .container h3 {
+      margin-bottom: 5rem; }
+    main .feedback .container .feedback-content {
+      display: grid;
+      grid-template-columns: 3fr 2fr; }
+      main .feedback .container .feedback-content .feedback-text {
+        display: flex;
+        flex-direction: column; }
+        main .feedback .container .feedback-content .feedback-text h4 {
+          font-weight: 700;
+          margin-top: 2rem;
+          color: #555555; }
+        main .feedback .container .feedback-content .feedback-text p {
+          line-height: 155.4%; }
+        main .feedback .container .feedback-content .feedback-text .apostrophe-inverted {
+          align-self: flex-end;
+          transform: rotate(180deg); }
+      main .feedback .container .feedback-content .feedback-image {
+        justify-self: center; }
+
+main .other-shots {
+  min-height: 100rem;
+  padding: 10rem 0;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  background-image: linear-gradient(to right, #000000f5, #000000f5), url("https://res.cloudinary.com/tommyopeters/image/upload/v1572901963/staybusy/Mask_Group_1_ujtie4.png");
+  background-size: cover;
+  color: white; }
+  main .other-shots h3 {
+    width: 100%;
+    text-align: center; }
+  main .other-shots .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    main .other-shots .carousel div {
+      position: absolute;
+      overflow: hidden; }
+      main .other-shots .carousel div img {
+        width: 100%; }
+    main .other-shots .carousel .img-left {
+      width: 25%;
+      top: 30%;
+      left: 5%; }
+    main .other-shots .carousel .img-right {
+      width: 25%;
+      top: 50%;
+      right: 5%; }
+    main .other-shots .carousel .img-main {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40%; }
+  main .other-shots .carousel-navigation {
+    justify-self: center; }
+    main .other-shots .carousel-navigation i {
+      font-size: 5rem;
+      margin-right: 3rem;
+      cursor: pointer; }
+
+main .projects .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0; }
+  main .projects .container h3 {
+    margin-bottom: 5rem; }
+  main .projects .container .project-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: center;
+    justify-content: center; }
+    main .projects .container .project-group .project-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%; }
+      main .projects .container .project-group .project-item img {
+        width: 100%; }
+      main .projects .container .project-group .project-item a {
+        color: black;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-decoration: none; }
+        main .projects .container .project-group .project-item a span {
+          margin-left: 1rem; }
 
 a.project-link {
   display: flex;

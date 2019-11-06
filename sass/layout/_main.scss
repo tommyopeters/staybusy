@@ -173,7 +173,6 @@ main {
     }
   }
   .process {
-    // background-color: black;
     background-image: linear-gradient(to right, #000000f5, #000000f5),
       url("https://res.cloudinary.com/tommyopeters/image/upload/v1572901963/staybusy/Mask_Group_1_ujtie4.png");
     background-size: cover;
@@ -181,12 +180,179 @@ main {
 
     .container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 3fr 4fr;
       align-items: center;
+      padding: 5rem 0;
 
       .process-text {
+        height: 70%;
+
+        h3 {
+          margin-bottom: 3rem;
+        }
         ul {
+          height: 90%;
           list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          li {
+            margin-bottom: 4rem;
+            h2 {
+              font-weight: bold;
+              font-size: 6rem;
+              color: #fce3c4;
+            }
+            p {
+              font-weight: bold;
+              color: #afafaf;
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+      .process-image {
+        width: 100%;
+        &_container {
+          width: 100%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .feedback {
+    background-image: url("https://res.cloudinary.com/tommyopeters/image/upload/v1572986658/staybusy/Mask_Group_uzbyq4.svg");
+    background-size: cover;
+    .container {
+      padding: 10rem 0;
+
+      h3 {
+        margin-bottom: 5rem;
+      }
+      .feedback-content {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+
+        .feedback-text {
+          display: flex;
+          flex-direction: column;
+
+          h4 {
+            font-weight: 700;
+            margin-top: 2rem;
+            color: #555555;
+          }
+          p {
+            line-height: 155.4%;
+          }
+
+          .apostrophe-inverted {
+            align-self: flex-end;
+            transform: rotate(180deg);
+          }
+        }
+
+        .feedback-image {
+          justify-self: center;
+        }
+      }
+    }
+  }
+  .other-shots {
+    min-height: 100rem;
+    padding: 10rem 0;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    background-image: linear-gradient(to right, #000000f5, #000000f5),
+      url("https://res.cloudinary.com/tommyopeters/image/upload/v1572901963/staybusy/Mask_Group_1_ujtie4.png");
+    background-size: cover;
+    color: white;
+
+    h3 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      div {
+        position: absolute;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      .img-left {
+        width: 25%;
+        top: 30%;
+        left: 5%;
+      }
+      .img-right {
+        width: 25%;
+        top: 50%;
+        right: 5%;
+      }
+      .img-main {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+      }
+    }
+    .carousel-navigation {
+      justify-self: center;
+
+      i {
+        font-size: 5rem;
+        margin-right: 3rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .projects {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10rem 0;
+
+      h3 {
+        margin-bottom: 5rem;
+      }
+
+      .project-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+
+        .project-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 90%;
+
+          img {
+            width: 100%;
+          }
+          a {
+            color: black;
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-decoration: none;
+
+            span {
+              margin-left: 1rem;
+            }
+          }
         }
       }
     }

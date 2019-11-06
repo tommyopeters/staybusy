@@ -1,0 +1,47 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .container {
+    width: 75%;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    h3 {
+      font-weight: 800;
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+
+      color: #105293;
+    }
+    p {
+      font-size: 18px;
+      color: #555555;
+    }
+    .visit-us {
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+    .direction {
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-decoration-line: underline;
+      color: #105293;
+    }
+    .social-links {
+      display: flex;
+      gap: 2rem;
+
+      i {
+        color: #555555;
+      }
+    }
+  }
+  p {
+    width: 75%;
+    font-size: 1.5rem;
+    color: #555555;
+  }
+}
