@@ -749,6 +749,8 @@ a.project-link {
     .process {
       .container {
         .process-text {
+          display: flex;
+          flex-direction: column;
           h3 {
           }
           ul {
@@ -978,11 +980,11 @@ a.project-link {
 
       .carousel {
         grid-template-columns: 1fr;
-        row-gap: 3rem;
+        row-gap: 0rem;
         div {
           width: 80%;
           img {
-            width: 60%;
+            width: 80%;
           }
         }
         .img-left {
