@@ -268,13 +268,14 @@ main .fonts {
         main .fonts .container .fonts-content .colors .color-group .color {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          margin-right: 7rem; }
+          align-items: center; }
           main .fonts .container .fonts-content .colors .color-group .color .inner-color {
             height: 12.5rem;
             width: 12.5rem;
             border-radius: 100%;
             margin-bottom: 2rem; }
+        main .fonts .container .fonts-content .colors .color-group div.color:not(:last-child) {
+          margin-right: 7rem; }
         main .fonts .container .fonts-content .colors .color-group .brown div {
           background-color: #fce3c4; }
         main .fonts .container .fonts-content .colors .color-group .black div {
@@ -464,6 +465,12 @@ a.project-link {
 @media only screen and (max-width: 1200px) {
   main section .container {
     width: 80%; }
+  main .introduction .top-introduction {
+    min-height: auto; }
+    main .introduction .top-introduction_text {
+      margin: 15rem 0; }
+  main .introduction .bottom-introduction {
+    min-height: auto; }
   main .introduction-mobile {
     right: 0%; }
   main .fonts .container {
@@ -488,8 +495,23 @@ a.project-link {
     width: 80%; }
   main .introduction .top-introduction_text {
     width: 85%; }
+  main .introduction .bottom-introduction_image {
+    margin-top: 10rem; }
   main .introduction-mobile {
     right: -5%; }
+  main .fonts .container .fonts-content .font-regular {
+    margin-bottom: 3rem;
+    grid-template-columns: 1fr;
+    align-items: center; }
+    main .fonts .container .fonts-content .font-regular .averta h3 {
+      width: 100%;
+      text-align: center; }
+  main .fonts .container .fonts-content .font-bold {
+    grid-template-columns: 1fr;
+    align-items: center; }
+    main .fonts .container .fonts-content .font-bold .averta h3 {
+      width: 100%;
+      text-align: center; }
   main .fonts .container .fonts-mobile {
     display: none; } }
 
@@ -498,6 +520,8 @@ a.project-link {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  main .introduction .bottom-introduction_image {
+    width: 80%; }
   main .introduction-mobile {
     display: none; }
   main .fonts .container .fonts-mobile {

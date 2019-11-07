@@ -129,14 +129,15 @@ main {
               flex-direction: column;
               align-items: center;
 
-              margin-right: 7rem;
-
               .inner-color {
                 height: 12.5rem;
                 width: 12.5rem;
                 border-radius: 100%;
                 margin-bottom: 2rem;
               }
+            }
+            div.color:not(:last-child) {
+              margin-right: 7rem;
             }
             .brown {
               div {
@@ -452,12 +453,15 @@ a.project-link {
     }
     .introduction {
       .top-introduction {
+        min-height: auto;
         &_text {
+          margin: 15rem 0;
           p {
           }
         }
       }
       .bottom-introduction {
+        min-height: auto;
         &_image {
           img {
           }
@@ -634,6 +638,7 @@ a.project-link {
       }
       .bottom-introduction {
         &_image {
+          margin-top: 10rem;
           img {
           }
         }
@@ -650,16 +655,25 @@ a.project-link {
             button {
             }
             &-regular {
+              margin-bottom: 3rem;
+              grid-template-columns: 1fr;
+              align-items: center;
               .averta {
                 h3 {
+                  width: 100%;
+                  text-align: center;
                 }
               }
               button {
               }
             }
             &-bold {
+              grid-template-columns: 1fr;
+              align-items: center;
               .averta {
                 h3 {
+                  width: 100%;
+                  text-align: center;
                 }
               }
               button {
@@ -801,6 +815,7 @@ a.project-link {
       }
       .bottom-introduction {
         &_image {
+          width: 80%;
           img {
           }
         }
