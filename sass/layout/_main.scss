@@ -426,6 +426,9 @@ a.project-link {
       &-mobile {
         right: 5%;
       }
+      .other-shots {
+        min-height: auto;
+      }
     }
     .fonts {
       .container {
@@ -583,21 +586,42 @@ a.project-link {
     }
     .other-shots {
       h3 {
+        margin-bottom: 5rem;
       }
 
       .carousel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         div {
+          position: static;
           img {
+            width: 80%;
           }
         }
         .img-left {
+          transform: translate(0, 0);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
         }
         .img-right {
+          transform: translate(0, 0);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
         }
         .img-main {
+          transform: translate(0, 0);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
         }
       }
       .carousel-navigation {
+        display: none;
         i {
         }
       }
@@ -931,8 +955,12 @@ a.project-link {
       }
 
       .carousel {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
         div {
+          width: 80%;
           img {
+            width: 60%;
           }
         }
         .img-left {
@@ -955,6 +983,170 @@ a.project-link {
         .project-group {
           grid-template-columns: 1fr 1fr;
 
+          .project-item {
+            img {
+            }
+            a {
+              span {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    section {
+      .container {
+      }
+    }
+    .introduction {
+      .top-introduction {
+        &_text {
+          p {
+          }
+        }
+      }
+      .bottom-introduction {
+        &_image {
+          img {
+          }
+        }
+      }
+
+      &-mobile {
+      }
+    }
+    .fonts {
+      .container {
+        .fonts-content {
+          .font {
+            button {
+            }
+            &-regular {
+              .averta {
+                h3 {
+                }
+              }
+              button {
+              }
+            }
+            &-bold {
+              .averta {
+                h3 {
+                }
+              }
+              button {
+              }
+            }
+          }
+          .colors {
+            h3 {
+            }
+            .color-group {
+              .color {
+                .inner-color {
+                }
+              }
+              .brown {
+                div {
+                }
+              }
+              .black {
+                div {
+                }
+              }
+              .grey {
+                div {
+                }
+              }
+            }
+          }
+        }
+        .fonts-mobile {
+          width: 120%;
+          img {
+            width: 120%;
+          }
+
+          .rotate-right {
+          }
+          .rotate-left {
+          }
+        }
+      }
+    }
+    .process {
+      .container {
+        .process-text {
+          h3 {
+          }
+          ul {
+            li {
+              h2 {
+              }
+              p {
+              }
+            }
+          }
+        }
+        .process-image {
+          &_container {
+            img {
+            }
+          }
+        }
+      }
+    }
+    .feedback {
+      .container {
+        h3 {
+        }
+        .feedback-content {
+          .feedback-text {
+            h4 {
+            }
+            p {
+            }
+
+            .apostrophe-inverted {
+            }
+          }
+
+          .feedback-image {
+          }
+        }
+      }
+    }
+    .other-shots {
+      h3 {
+      }
+
+      .carousel {
+        div {
+          img {
+          }
+        }
+        .img-left {
+        }
+        .img-right {
+        }
+        .img-main {
+        }
+      }
+      .carousel-navigation {
+        i {
+        }
+      }
+    }
+    .projects {
+      .container {
+        h3 {
+        }
+
+        .project-group {
           .project-item {
             img {
             }
