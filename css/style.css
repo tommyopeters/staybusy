@@ -549,6 +549,8 @@ a.project-link {
       width: 100%;
       text-align: center; }
   main .fonts .container .fonts-mobile {
+    display: none; }
+  main .process .container .process-image {
     display: none; } }
 
 @media only screen and (max-width: 900px) {
