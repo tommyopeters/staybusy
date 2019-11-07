@@ -28,8 +28,28 @@ header {
         a {
           color: #1989eb;
           font-weight: 800;
+
+          transition: all 200ms ease-in-out;
+
+          &:hover {
+            color: #047be4aa;
+          }
+        }
+        a.active {
+          color: #0f0f0f;
+
+          &:hover {
+            color: #0f0f0faa;
+          }
         }
       }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header {
+    nav {
+      width: 70%;
     }
   }
 }

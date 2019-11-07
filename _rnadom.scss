@@ -1,0 +1,165 @@
+@media only screen and (max-width: 1300px) {
+  main {
+    section {
+      .container {
+      }
+    }
+    .introduction {
+      .top-introduction {
+        &_text {
+          p {
+          }
+        }
+      }
+      .bottom-introduction {
+        &_image {
+          img {
+          }
+        }
+      }
+
+      &-mobile {
+        right: 5%;
+      }
+    }
+    .fonts {
+      .container {
+        .fonts-content {
+          .font {
+            button {
+            }
+            &-regular {
+              .averta {
+                h3 {
+                }
+              }
+              button {
+              }
+            }
+            &-bold {
+              .averta {
+                h3 {
+                }
+              }
+              button {
+              }
+            }
+          }
+          .colors {
+            h3 {
+            }
+            .color-group {
+              .color {
+                .inner-color {
+                }
+              }
+              .brown {
+                div {
+                }
+              }
+              .black {
+                div {
+                }
+              }
+              .grey {
+                div {
+                }
+              }
+            }
+          }
+        }
+        .fonts-mobile {
+          width: 120%;
+          img {
+            width: 120%;
+          }
+
+          .rotate-right {
+          }
+          .rotate-left {
+          }
+        }
+      }
+    }
+    .process {
+      .container {
+        .process-text {
+          h3 {
+          }
+          ul {
+            li {
+              h2 {
+              }
+              p {
+              }
+            }
+          }
+        }
+        .process-image {
+          &_container {
+            img {
+            }
+          }
+        }
+      }
+    }
+    .feedback {
+      .container {
+        h3 {
+        }
+        .feedback-content {
+          .feedback-text {
+            h4 {
+            }
+            p {
+            }
+
+            .apostrophe-inverted {
+            }
+          }
+
+          .feedback-image {
+          }
+        }
+      }
+    }
+    .other-shots {
+      h3 {
+      }
+
+      .carousel {
+        div {
+          img {
+          }
+        }
+        .img-left {
+        }
+        .img-right {
+        }
+        .img-main {
+        }
+      }
+      .carousel-navigation {
+        i {
+        }
+      }
+    }
+    .projects {
+      .container {
+        h3 {
+        }
+
+        .project-group {
+          .project-item {
+            img {
+            }
+            a {
+              span {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
