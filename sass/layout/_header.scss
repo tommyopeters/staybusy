@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
 
-    ul {
+    ul#main-nav {
       list-style-type: none;
       display: flex;
       align-items: center;
@@ -36,13 +36,16 @@ header {
           }
         }
         a.active {
-          color: #0f0f0f;
+          color: #555555;
 
           &:hover {
-            color: #0f0f0faa;
+            color: #333333;
           }
         }
       }
+    }
+    #hamburger {
+      display: none;
     }
   }
 }
@@ -64,8 +67,11 @@ header {
   header {
     nav {
       width: 90%;
-      ul {
+      ul#main-nav {
         display: none;
+      }
+      #hamburger {
+        display: block;
       }
     }
   }
