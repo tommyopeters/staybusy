@@ -495,7 +495,9 @@ a.project-link {
     margin-bottom: 5rem; }
   main .other-shots .carousel {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center; }
     main .other-shots .carousel div {
       position: static; }
       main .other-shots .carousel div img {
@@ -511,7 +513,10 @@ a.project-link {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      grid-column: 1 / span 2; }
+      main .other-shots .carousel .img-right img {
+        width: 50%; }
     main .other-shots .carousel .img-main {
       transform: translate(0, 0);
       display: flex;
@@ -555,10 +560,24 @@ a.project-link {
     width: 80%; }
   main .introduction-mobile {
     display: none; }
+  main .fonts .container .fonts-content .colors .color-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8rem; }
+    main .fonts .container .fonts-content .colors .color-group div.color:not(:last-child) {
+      margin-right: 0; }
+    main .fonts .container .fonts-content .colors .color-group div.color:last-child {
+      grid-column: 1 / span 2; }
   main .fonts .container .fonts-mobile {
     width: 120%; }
     main .fonts .container .fonts-mobile img {
       width: 120%; }
+  main .feedback .container h3 {
+    text-align: center; }
+  main .feedback .container .feedback-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; }
   main .other-shots .carousel {
     grid-template-columns: 1fr;
     row-gap: 3rem; }
@@ -567,7 +586,11 @@ a.project-link {
       main .other-shots .carousel div img {
         width: 60%; }
   main .projects .container .project-group {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+    main .projects .container .project-group div.project-item:last-child {
+      grid-column: 1 / span 2;
+      width: 50%;
+      justify-self: center; } }
 
 @media only screen and (max-width: 600px) {
   main .fonts .container .fonts-mobile {

@@ -592,12 +592,15 @@ a.project-link {
       .carousel {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
         div {
           position: static;
           img {
             width: 80%;
           }
         }
+
         .img-left {
           transform: translate(0, 0);
           display: flex;
@@ -611,6 +614,10 @@ a.project-link {
           justify-content: center;
           align-items: center;
           width: 100%;
+          grid-column: 1 / span 2;
+          img {
+            width: 50%;
+          }
         }
         .img-main {
           transform: translate(0, 0);
@@ -876,6 +883,10 @@ a.project-link {
             h3 {
             }
             .color-group {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              column-gap: 8rem;
+
               .color {
                 .inner-color {
                 }
@@ -891,6 +902,12 @@ a.project-link {
               .grey {
                 div {
                 }
+              }
+              div.color:not(:last-child) {
+                margin-right: 0;
+              }
+              div.color:last-child {
+                grid-column: 1 / span 2;
               }
             }
           }
@@ -933,8 +950,12 @@ a.project-link {
     .feedback {
       .container {
         h3 {
+          text-align: center;
         }
         .feedback-content {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
           .feedback-text {
             h4 {
             }
@@ -989,6 +1010,13 @@ a.project-link {
             a {
               span {
               }
+            }
+          }
+          div.project-item:last-child {
+            grid-column: 1 / span 2;
+            width: 50%;
+            justify-self: center;
+            img {
             }
           }
         }
