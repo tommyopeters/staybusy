@@ -97,6 +97,16 @@ header {
   header nav {
     width: 70%; } }
 
+@media only screen and (max-width: 1000px) {
+  header nav {
+    width: 80%; } }
+
+@media only screen and (max-width: 900px) {
+  header nav {
+    width: 90%; }
+    header nav ul {
+      display: none; } }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -126,7 +136,7 @@ footer {
       footer .container .social-links i {
         color: #555555;
         margin-right: 1rem; }
-  footer p {
+  footer p.copyright {
     width: 75%;
     font-size: 1.5rem;
     color: #555555; }
@@ -134,8 +144,36 @@ footer {
 @media only screen and (min-width: 1440px) {
   footer .container {
     width: 70%; }
-  footer p {
+  footer p.copyright {
     width: 70%; } }
+
+@media only screen and (max-width: 1300px) {
+  footer .container {
+    width: 80%; }
+  footer p.copyright {
+    width: 80%; } }
+
+@media only screen and (max-width: 1200px) {
+  footer .container {
+    width: 90%; }
+  footer p.copyright {
+    width: 90%; } }
+
+@media only screen and (max-width: 1200px) {
+  footer .container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem; }
+  footer p.copyright {
+    width: 90%; } }
+
+@media only screen and (max-width: 900px) {
+  footer .container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    row-gap: 5rem; }
+  p.copyright {
+    text-align: center; } }
 
 main section {
   display: flex;

@@ -53,3 +53,20 @@ header {
     }
   }
 }
+@media only screen and (max-width: 1000px) {
+  header {
+    nav {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  header {
+    nav {
+      width: 90%;
+      ul {
+        display: none;
+      }
+    }
+  }
+}

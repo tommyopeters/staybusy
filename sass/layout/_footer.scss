@@ -39,7 +39,7 @@ footer {
       }
     }
   }
-  p {
+  p.copyright {
     width: 75%;
     font-size: 1.5rem;
     color: #555555;
@@ -50,8 +50,52 @@ footer {
     .container {
       width: 70%;
     }
-    p {
+    p.copyright {
       width: 70%;
     }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  footer {
+    .container {
+      width: 80%;
+    }
+    p.copyright {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  footer {
+    .container {
+      width: 90%;
+    }
+    p.copyright {
+      width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  footer {
+    .container {
+      width: 90%;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 5rem;
+    }
+    p.copyright {
+      width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  footer {
+    .container {
+      width: 80%;
+      grid-template-columns: 1fr;
+      row-gap: 5rem;
+    }
+  }
+  p.copyright {
+    text-align: center;
   }
 }
